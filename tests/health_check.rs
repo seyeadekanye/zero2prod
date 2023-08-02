@@ -1,7 +1,7 @@
 use std::net::TcpListener;
 
 #[tokio::test]
-async fn health_check_works(){
+async fn health_check_works() {
     let address = spawn_app();
     let client = reqwest::Client::new();
     let response = client
